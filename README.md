@@ -46,11 +46,12 @@ py -m PyInstaller --onefile BCH_decoder.py
 Then enter any 10-digit code over GF(11). The program will report whether the word is correct, corrected, or not decodable.
 
 ## Examples
-Input Code  |   Result
-3417168201  |   Correct codeword
-5382842390  |   Two errors detected and corrected
-1013022030  |   One error detected and corrected
-2317528101  |   Three or more errors detected, retransmission requested
+| Input Code | Result |
+|-----------|--------|
+| 3417168201 | Correct codeword |
+| 5382842390 | Two errors detected and corrected |
+| 1013022030 | One error detected and corrected |
+| 2317528101 | Three or more errors detected, retransmission requested |
 
 ## Extensibility
 
@@ -60,3 +61,4 @@ Only the parity-check matrix needs to be changed; the decoding logic remains unc
 ## Mathematical Background
 
 The implementation follows standard syndrome decoding methods as presented in classical coding theory literature and demonstrates the practical use of finite fields, polynomial equations, and algebraic structure in reliable communication systems.
+
